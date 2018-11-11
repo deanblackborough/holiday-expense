@@ -20,3 +20,16 @@ Route::get('/', function () {
 Route::get('/sign-in', 'AuthenticationController@signIn');
 Route::get('/sign-out', 'AuthenticationController@signOut');
 Route::post('/sign-in', 'AuthenticationController@processSignIn');
+
+Route::group(
+    [
+        'middleware' => [
+            'check.for.session'
+        ]
+    ],
+    function () {
+        Route::get('/summary', 'SummaryController@summary');
+        Route::get('/add-expense', 'ExpenseController@addExpense');
+        Route::post('/add-expense', 'ProcessController@processAddExpense');
+    }
+);
