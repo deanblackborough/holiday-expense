@@ -1,0 +1,14 @@
+{
+    "name": "holiday-expenses",
+    "version": "1.0.0",
+    "description": "Small app to interacts with my Costs to Expect API to track holiday expenses",
+    "license": "MIT",
+    "dependencies": {
+        "bootstrap": "^4.1.3",
+        "jquery": "^3.3.1",
+        "popper.js": "^1.14.4"
+    },
+    "main": "index.php",
+    "repository": "https://github.com/deanblackborough/holiday-expenses",
+    "author": "Dean Blackborough"
+}
