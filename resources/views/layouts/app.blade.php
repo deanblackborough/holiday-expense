@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Costs to Expect</title>
+    <title>Holiday Expenses</title>
 
     <link href="{{ asset('node_modules/bootstrap/dist/css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -16,13 +16,19 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Holiday Expenses</a>
+    <a class="navbar-brand" href="{{ action('SummaryController@summary') }}">Holiday Expenses</a>
     @if ($display_navigation === true)
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+                <li class="nav-item @if ($nav_active === 'add-expense') active @endif">
+                    <a class="nav-link" href="{{ action('ExpenseController@addExpense') }}">Add expense</a>
+                </li>
+                <li class="nav-item @if ($nav_active === 'summaries') active @endif">
+                    <a class="nav-link" href="{{ action('SummaryController@summary') }}">Summary</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ action('AuthenticationController@signOut') }}">Sign out</a>
                 </li>
