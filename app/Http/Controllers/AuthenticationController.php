@@ -55,7 +55,7 @@ class AuthenticationController extends BaseController
 
             if ($response->getStatusCode() === 200) {
                 $request->session()->put('bearer', json_decode($response->getBody(), true)['token']);
-                return redirect()->action('IndexController@recent');
+                return redirect()->action('SummaryController@summary');
             } else {
                 $request->session()->flush();
                 return redirect()->action('AuthenticationController@signIn');
