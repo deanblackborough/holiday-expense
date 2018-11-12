@@ -16,7 +16,7 @@ class SummaryController extends BaseController
     {
         $summary = Api::getInstance()
             ->public()
-            ->redirectOnFailure('ErrorController@requestStatus')
+            //->redirectOnFailure('ErrorController@requestStatus')
             ->get(Config::get('web.config.api_uri_summary_categories_expanded'));
 
         return view(
