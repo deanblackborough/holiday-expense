@@ -24,7 +24,8 @@ class SummaryController extends BaseController
             [
                 'display_navigation' => $this->display_navigation,
                 'display_add_expense' => $this->display_add_expense,
-                'nav_active' => 'summary'
+                'nav_active' => 'summary',
+                'summary' => $summary
             ]
         );
     }

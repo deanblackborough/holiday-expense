@@ -13,7 +13,7 @@ return [
 
     'api_uri_summary_categories_expanded' => 'resource_types/' .
         env($key_api_resource_type_id, null) . '/resources/' .
-        env($key_api_resource_id, null) . '/summary/categories_expanded',
+        env($key_api_resource_id, null) . '/expanded_summary/categories',
 
     'version' => 'v1.00.0',
     'release_date' => '[Development]'
