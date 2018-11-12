@@ -13,10 +13,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/', 'AuthenticationController@signIn');
 Route::get('/sign-in', 'AuthenticationController@signIn');
 Route::get('/sign-out', 'AuthenticationController@signOut');
 Route::post('/sign-in', 'AuthenticationController@processSignIn');

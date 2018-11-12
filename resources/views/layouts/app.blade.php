@@ -26,7 +26,7 @@
                 <li class="nav-item @if ($nav_active === 'add-expense') active @endif">
                     <a class="nav-link" href="{{ action('ExpenseController@addExpense') }}">Add expense</a>
                 </li>
-                <li class="nav-item @if ($nav_active === 'summaries') active @endif">
+                <li class="nav-item @if ($nav_active === 'summary') active @endif">
                     <a class="nav-link" href="{{ action('SummaryController@summary') }}">Summary</a>
                 </li>
                 <li class="nav-item">
