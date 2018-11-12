@@ -11,6 +11,10 @@ return [
     'api_resource_type_id' => env($key_api_resource_type_id, null),
     'api_resource_id' => env($key_api_resource_id, null),
 
+    'api_uri_summary_categories_expanded' => 'resource_types/' .
+        env($key_api_resource_type_id, null) . '/resources/' .
+        env($key_api_resource_id, null) . '/summary/categories_expanded',
+
     'version' => 'v1.00.0',
     'release_date' => '[Development]'
 ];
