@@ -50,6 +50,7 @@
             <div class="form-group">
                 {{ csrf_field() }}
                 <input type="hidden" id="item_category_id" name="category_id" value="{{ $category_id_1 }}" />
+                <input type="hidden" id="percentage" name="percentage" value="100" />
                 <button class="btn btn-primary btn-block mt-3" type="submit">Save</button>
             </div>
         </form>
