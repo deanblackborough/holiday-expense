@@ -28,5 +28,6 @@ Route::group(
         Route::get('/summary', 'SummaryController@summary');
         Route::get('/add-expense', 'ExpenseController@addExpense');
         Route::post('/add-expense', 'ProcessController@processAddExpense');
+        Route::get('/sub-categories/{category_identifier}', 'ExpenseController@subCategories');
     }
 );
