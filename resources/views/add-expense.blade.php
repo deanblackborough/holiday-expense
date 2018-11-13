@@ -31,10 +31,10 @@
                             <input type="radio" name="options" class="category_selector" value="{{ $category_id_1 }}" autocomplete="off" checked /> Our family
                         </label>
                         <label class="btn btn-info btn-sm">
-                            <input type="radio" name="options" class="category_selector" value="{{ $category_id_1 }}" autocomplete="off" /> Aideens Family
+                            <input type="radio" name="options" class="category_selector" value="{{ $category_id_2 }}" autocomplete="off" /> Aideens Family
                         </label>
                         <label class="btn btn-info btn-sm">
-                            <input type="radio" name="options" class="category_selector" value="{{ $category_id_1 }}" autocomplete="off" /> Deans family
+                            <input type="radio" name="options" class="category_selector" value="{{ $category_id_3 }}" autocomplete="off" /> Deans family
                         </label>
                     </div>
                 </div>

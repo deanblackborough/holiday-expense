@@ -29,10 +29,23 @@ class ExpenseController extends BaseController
                 'display_add_expense' => false,
                 'nav_active' => 'add-expense',
                 'category_id_1' => Config::get('web.config.api_category_id_1'),
-                'category_id_2' => Config::get('web.config.api_category_id_1'),
-                'category_id_3' => Config::get('web.config.api_category_id_1'),
+                'category_id_2' => Config::get('web.config.api_category_id_2'),
+                'category_id_3' => Config::get('web.config.api_category_id_3'),
                 'sub_categories' => $sub_categories
             ]
         );
+    }
+
+    public function subCategories(Request $request, string $category_identifier)
+    {
+        $sub_categories = Api::getInstance()
+            ->public()
+            //->redirectOnFailure('ErrorController@requestStatus')
+            ->get(
+                Config::get('web.config.api_uri_categories') .
+                '/' . $category_identifier . '/sub_categories'
+            );
+
+        return response()->json($sub_categories, 200);
     }
 }
