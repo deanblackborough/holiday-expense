@@ -19,7 +19,7 @@
             @foreach ($summary as $summary_row)
                 <tr>
                     <td><strong>{{ $summary_row['sub_category'] }}</strong></td>
-                    <td>&pound;{{ $summary_row['total'] }}</td>
+                    <td>&pound;{{ $summary_row['actualised_total'] }}</td>
                     <td>{{ $summary_row['items'] }}</td>
                 </tr>
             @endforeach

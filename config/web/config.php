@@ -26,5 +26,5 @@ return [
     'api_category_id_3' => env($key_api_category_id_3, null),
 
     'version' => 'v1.00.0',
-    'release_date' => '[Development]'
+    'release_date' => '15th November 2018'
 ];
