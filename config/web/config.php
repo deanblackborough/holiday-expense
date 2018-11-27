@@ -2,7 +2,6 @@
 
 $key_api_resource_type_id = 'API_RESOURCE_TYPE_ID';
 $key_api_resource_id = 'API_RESOURCE_ID';
-$key_api_category_id_1 = 'API_CATEGORY_ID_1';
 $key_api_category_id_2 = 'API_CATEGORY_ID_2';
 $key_api_category_id_3 = 'API_CATEGORY_ID_3';
 
@@ -21,7 +20,6 @@ return [
     'api_resource_type_id' => env($key_api_resource_type_id, null),
     'api_resource_id' => env($key_api_resource_id, null),
 
-    'api_category_id_1' => env($key_api_category_id_1, null),
     'api_category_id_2' => env($key_api_category_id_2, null),
     'api_category_id_3' => env($key_api_category_id_3, null),
 

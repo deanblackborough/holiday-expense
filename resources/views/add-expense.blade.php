@@ -28,13 +28,10 @@
                 <div class="form-group col-12">
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
                         <label class="btn btn-info btn-sm active">
-                            <input type="radio" name="options" class="category_selector" value="{{ $category_id_1 }}" autocomplete="off" checked /> Our family
+                            <input type="radio" name="options" class="category_selector" value="{{ $category_id_2 }}" autocomplete="off" checked /> Aideen's Family
                         </label>
                         <label class="btn btn-info btn-sm">
-                            <input type="radio" name="options" class="category_selector" value="{{ $category_id_2 }}" autocomplete="off" /> Aideens Family
-                        </label>
-                        <label class="btn btn-info btn-sm">
-                            <input type="radio" name="options" class="category_selector" value="{{ $category_id_3 }}" autocomplete="off" /> Deans family
+                            <input type="radio" name="options" class="category_selector" value="{{ $category_id_3 }}" autocomplete="off" /> Dean's family
                         </label>
                     </div>
                 </div>
@@ -49,7 +46,7 @@
             </div>
             <div class="form-group">
                 {{ csrf_field() }}
-                <input type="hidden" id="item_category_id" name="category_id" value="{{ $category_id_1 }}" />
+                <input type="hidden" id="item_category_id" name="category_id" value="{{ $category_id_2 }}" />
                 <input type="hidden" id="percentage" name="percentage" value="100" />
                 <button class="btn btn-primary btn-block mt-3" type="submit">Save</button>
             </div>
